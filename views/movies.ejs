@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <%- include('partials/header'); %>
+        <main>
+            <% for(let i=0; i < movies.length; i++) { %>
+                <section>
+                    <a href="/movie/<%= movies[i].name %>">
+                        <h2>
+                            <%= movies[i].name %>
+                        </h2>
+                    </a>
+                    <p>
+                        <%= movies[i].myScore %>
+                    </p>
+                    <img style="height: 400px;width: 250px;" src="<%= movies[i].image %>" alt="image">
+                </section>
+                <% } %>
+                <a href="/addmovie"><button>Add movie</button></a>
+        </main>
+        <%- include('partials/footer'); %>
+</body>
+
+</html>

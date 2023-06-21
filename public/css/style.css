@@ -1,0 +1,51 @@
+/*GENERAL*/
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    height: 50px;
+    width: 77vw;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 400px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    gap: 10px;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    height: 50px;
+    width: 77vw;
+    background-color: black;
+    color: white;
+}

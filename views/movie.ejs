@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+        <main>
+            <section>
+                <a href="/movies">GO BACK</a>
+                <h2>
+                    <%= movie.name %>
+                </h2>
+                <p>
+                    SCORE: <%=movie.myScore %> / 100
+                </p>
+                <img style="height: 400px;width: 250px;" src="<%= movie.image %>" alt="image">
+                <p>
+                    <%= movie.description %>
+                </p>
+                <a href="/deleteMovie/<%= movie._id %>"><button>DELETE MOVIE</button></a>
+            </section>
+        </main>
+</body>
+
+</html>

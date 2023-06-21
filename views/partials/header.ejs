@@ -1,0 +1,16 @@
+<header>
+    <h1>Movie Database</h1>
+    <nav>
+        <h2 class="hidden">Navigation</h2>
+        <ul>
+            <a style="color: white;" href="/"><li>Home</li></a>
+            <% if (user) { %>
+                <a style="color: white;" href="/movies"><li>Movies</li></a>
+                <a style="color: white;" href="/logout"><li>Logout</li></a>
+            <% } else { %>
+                <a style="color: white;" href="/login"><li>Login</li></a>
+                <a style="color: white;" href="/register"><li>Register</li></a>
+            <% } %>
+        </ul>
+    </nav>
+</header>

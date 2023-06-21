@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add movie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <a href="/movies">GO BACK</a>
+            <form action="/addmovie" method="post">
+                <label for="name">Movie name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="myScore">Score:</label><br>
+                <input type="text" id="myScore" name="myScore"><br>
+                <label for="image">Image link:</label><br>
+                <input type="text" id="image" name="image"><br>
+                <label for="description">Description:</label><br>
+                <input type="text" id="description" name="description"><br><br>
+                <label for="username" hidden></label><br>
+                <input type="text" id="username" name="username" value="<%= user %>" hidden>
+                <input type="submit" value="Submit">
+            </form>
+
+        </section>
+    </main>
+</body>
+
+</html>

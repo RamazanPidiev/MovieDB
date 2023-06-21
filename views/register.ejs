@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>REGISTER</h1>
+            <a href="/login">GO BACK</a>
+            <form action="/register" method="post">
+                <label for="name">username:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="password">password:</label><br>
+                <input type="text" id="password" name="password"><br>
+                <input type="submit" value="Submit">
+                <% if (locals.message) {%>
+                    <p><%= locals.message %></p>
+                <% } %>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
